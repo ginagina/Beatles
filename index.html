@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<!--Support of foreigh character-->
+    <meta charset="utf-8">
+    <!--IE Compatibility Setting, "IE=Edge ensures IE uses the latest rendering engine-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Get physical width of the movile device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Name of your website displayed on the browser tab-->
+    <title>Fashion x Music</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="custom.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <style>
+        body{
+        background-color: #fff;
+        margin-bottom: 50px;
+        }
+        h1{
+            font-family: "Arial Black", Gadget, sans-serif;
+            color: #fff;
+            text-align: center;
+            background-color: #000;
+        }
+        .togmenu{
+            display: none;
+        }
+        .menubtn{
+            padding: 16px 20px;
+            background: #000;
+            color: #fff;
+        }
+        #menu ul{
+            margin: 0;
+            padding: 0;
+            background: #000;
+        }
+        #menu li{
+            list-style: none;
+            border-top: 2px solid #fff;
+        }
+        #menu li a{
+            padding: 16px 20px;
+            display: block;
+            text-decoration: none;
+            background: #000;
+            color: #fff;
+        }  
+        
+        #menu li a:hover{
+        color:red;
+        }
+    </style>
+    
+    <script>
+        $(function(){
+            $(".menubtn").click(function(){
+                $("#menu").toggleClass('togmenu');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12" style="background-color: #000;">
+                <h1>Fashion x Music</h1>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4" style="background-color: #000;">
+                        <br><br>
+                    </div>
+                    <div class="col-xs-4 col-sm-4" style="background-color: #000;">
+                        <br><br>
+                        <div class="menubtn"><img src="img/BeatlesLogo.jpg" alt="BeatlesLogo" Style="Width:100%; Align=Center" class="img-responsive"></a></div>
+                            <nav id="menu" class="togmenu">
+                            <ul>
+                            <li><a href="Members.html">Members</a></li><li><a href="Discography.html">Discography</a></li><li><a href="Movie.html">Movies</a></li><li><a href="3Trends.html">3 Trends</a></li>
+                            </ul>
+                            </nav>
+                        <br><br>
+                    </div>
+                    <div class="col-xs-4 col-sm-4" style="background-color: #000;">
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>     
+</body>
+
+</html>
